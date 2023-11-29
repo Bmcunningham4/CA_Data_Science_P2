@@ -23,6 +23,11 @@ Low Granularity can be good sometimes easier to manage and manipulate but can't 
 #? There isn't much to know about cleaning and checking data from what I could find:
 #? So without further adue, let's begin your analysis benno...
 
+#todo: This file below is basically irrelevant since I've now got it in a jupyter file.. ^^ That stuff up there I don't have tho..
+#todo: Just wanted to write this I think I've definitely done it the right way all the data first then all the visualisations after!!
+#todo: Just need to check with Steve the best way to make it a report.. and explain findings as I go / how much of that is necessary
+#! Don't want to make it too gross.. tho like bloody uni reports ughhhh ooooh (vommit sounds).. lol if this is seen 
+
 import pandas as pd
 import numpy as np
 import seaborn as sns
