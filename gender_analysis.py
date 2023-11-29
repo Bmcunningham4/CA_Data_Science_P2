@@ -30,9 +30,16 @@ import csv
 #? Only other shite I'll have to import is the skits. stats crap..
 
 salary_df = pd.read_csv("Salary.csv")
-# print(salary_df) ---- data looks good doesn't even look like it needs any cleaning...
+print(salary_df.head(), '\n') #---- data looks good doesn't even look like it needs any cleaning...
 
-#! Start of summary info
+#! Start of basic info summary, and what I'm measuring:
+"""
+Mean 
+Median
+Range & Variance
+Visualization of these ^^
+(Then I'll get to more specific areas after )
+"""
 
 #! mean
 #* Most basic: Avg salary for male/ female no context!
@@ -44,5 +51,18 @@ print(f"The average female salary is ${round(mean_female_salary, 2)}")
 mean_salary_diff = round(mean_male_salary - mean_female_salary,2)
 
 print(f"The mean salary difference is + ${mean_salary_diff} towards the male", '\n')
+
+
+#! Median
+median_female_salary = salary_df[salary_df["Gender"] == "Female"].Salary.median() 
+median_male_salary = salary_df[salary_df["Gender"] == "Male"].Salary.median()
+
+print(f"The median male salary is ${round(median_male_salary, 2)}")
+print(f"The median female salary is ${round(median_female_salary, 2)}")
+mean_salary_diff = round(median_male_salary - median_female_salary,2)
+
+print(f"The median salary difference is + ${mean_salary_diff} towards the male", '\n')
+
+
 
 

@@ -13,7 +13,6 @@
 3) Predictive Modeling for salary!
 
 4) Experience vs Salary! #? If I have time for this one but 3 is a good amount to aim for!
-
 """
 
 
@@ -30,6 +29,18 @@ AND REMEMBER -- I'm not doing this for every basic possible stat I'm doing this 
 
 Don't need to do this crap below ...
 That sorta crap and also do I include Lots of different dataframes made or do I just get that crap from the 1 main dataframe..
+
+
+#? I'm struggling to read the currencies when their in form like 1238223 compared to 123,599 --- I also don't know what currency lol
+
+
+
+
+
 """
+
+
+
+
 
 
