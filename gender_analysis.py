@@ -66,3 +66,4 @@ print(f"The median salary difference is + ${mean_salary_diff} towards the male",
 
 
 
+
