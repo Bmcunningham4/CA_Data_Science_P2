@@ -33,7 +33,7 @@ That sorta crap and also do I include Lots of different dataframes made or do I 
 
 #? I'm struggling to read the currencies when their in form like 1238223 compared to 123,599 --- I also don't know what currency lol
 
-
+Another thing That I've got to consider is...
 
 
 
