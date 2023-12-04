@@ -36,6 +36,16 @@ That sorta crap and also do I include Lots of different dataframes made or do I 
 """
 
 #todo: I'm up to here now.. I don't have to make it perfectly tidy now but was good to get rid of a lot of that clutter and will finish off at the end..
+"""
+#! Also this could take forever and ever which I don't necessarily want it to, so I'm just trying to do a really complete gender analysis, not weak lots of things..
+
+From here I think I should do this..
+1. Watch vid / look for examples on structure of projects..
+2. Make a tables file with all tables in a row with headings before each one!
+3. Make a data visualisation file inlcuding graphs etc.. have a think about whether chi-square stastic stuff is needed
+4. Write a final lil summary what I found etc.. (little cause I don't really give a shit about this!!)
+"""
+
 
 
 
