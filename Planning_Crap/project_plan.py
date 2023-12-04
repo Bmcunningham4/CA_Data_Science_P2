@@ -33,11 +33,9 @@ That sorta crap and also do I include Lots of different dataframes made or do I 
 
 #? I'm struggling to read the currencies when their in form like 1238223 compared to 123,599 --- I also don't know what currency lol
 
-Another thing That I've got to consider is...
-
-
-
 """
+
+#todo: I'm up to here now.. I don't have to make it perfectly tidy now but was good to get rid of a lot of that clutter and will finish off at the end..
 
 
 
