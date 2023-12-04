@@ -8,6 +8,5 @@ import sys
 print(sys.version)
 # import basic_data 
 
-import basic_data 
-#! Verify python versions could be a big thing since, one is .py file and 1 is a .ipynb file..
+
 
