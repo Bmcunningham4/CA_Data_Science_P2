@@ -5,6 +5,3 @@ file_path2 = "/Users/bencunningham/Documents/GitHub/CodeAcademy_Project_2/basic_
 
 
 import basic_data 
-
-#! WowwWWWWWWWWŴwwwwsoooooo
-#todo: Soooooo fucking annoying can't import shit from .ipynb fils is the problem...
