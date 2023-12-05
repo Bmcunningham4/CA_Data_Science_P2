@@ -21,3 +21,4 @@ Then explain more precisely in the readme what they actually are..
 I wonder if I need to explain why I didn't in my other one eg. worked on it in a different repository..
 
 # Let's see if this get's added to the main branch..
+(It's almost like I would have to delete all my table data and then re commit it.. for this to work..)
