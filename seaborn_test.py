@@ -8,32 +8,31 @@ import matplotlib.pyplot as plt
 #? Have a much better crack at getting this data viz happening goat..
 
 salary_df = pd.read_csv("Salary.csv")
-male_df = salary_df[salary_df.Gender == "Male"]
-female_df = salary_df[salary_df.Gender == "Female"]
+#* just realised I dont actually need to separarat these guys! But don't forget this copy business!!
+male_df = salary_df[salary_df.Gender == "Male"].copy() #* Take note of this I have to use .copy() method as I was getting a warning about chained indexing since I was trying to make changes not to the original dataframe but a new one which was a version of old...
+female_df = salary_df[salary_df.Gender == "Female"].copy()
 
-#? Data for visualisations! (Important moment here)
-male_20_29 = male_df[(male_df.Age > 19) & (male_df.Age <  30)].copy() #* Take note of this I have to use .copy() method as I was getting a warning about chained indexing since I was trying to make changes not to the original dataframe but a new one which was a version of old...
-male_30_39 = male_df[(male_df.Age > 29) & (male_df.Age <  40)].copy()
-male_40_49 = male_df[(male_df.Age > 39) & (male_df.Age <  50)].copy()
-male_50_100 = male_df[(male_df.Age > 49) & (male_df.Age <  100)].copy()
+#? Not Creating new dataframes this time!
+def age_group_funct(age):
+    if 19 < age < 30:
+        return "20 - 29"
+    elif 29 <  age < 40:
+        return "30 - 39"
+    elif 39 < age < 50:
+        return "40 - 49"
+    else:
+        return '50+'
 
-female_20_29 = female_df[(female_df.Age > 19) & (female_df.Age <  30)].copy()
-female_30_39 = female_df[(female_df.Age > 29) & (female_df.Age <  40)].copy()
-female_40_49 = female_df[(female_df.Age > 39) & (female_df.Age <  50)].copy()
-female_50_100 = female_df[(female_df.Age > 49) & (female_df.Age <  100)].copy()
+male_df["Age Group"] = male_df.Age.apply(age_group_funct)
+female_df["Age Group"] = female_df.Age.apply(age_group_funct)
 
-#? New Column to group ages
-male_20_29.loc[:, "Age Group"] = "20 - 29"
-male_30_39.loc[:, "Age Group"] = "30 - 39"
-male_40_49.loc[:, "Age Group"] = "40 - 49"
-male_50_100.loc[:, "Age Group"] = "50+"
-
-female_20_29.loc[:, "Age Group"] = "20 - 29"
-female_30_39.loc[:, "Age Group"] = "30 - 39"
-female_40_49.loc[:, "Age Group"] = "40 - 49"
-female_50_100.loc[:, "Age Group"] = "50+"
 
 #! OHHHHHH okkkk When doing this I don't actually have to make a new 2 column dataframe I just have to select the 2 columns that I want!
-sns.boxplot(data = male_20_29, x = "Salary", y = "Age Group")
+age_order = ['20 - 29', '30 - 39', '40 - 49', '50+']
+
+combined_df = pd.concat([male_df, female_df])
+
+# Create boxplots with hue as "Gender"
+sns.boxplot(data=combined_df, y="Salary", x="Age Group", order=age_order, hue="Gender") #* Pay attention to this hue guy he's pretty clutch
 plt.show()
 plt.close()
